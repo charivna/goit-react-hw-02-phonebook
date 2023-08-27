@@ -1,5 +1,5 @@
 import { Component } from "react";
-import { Form, Input, Label } from "./ContactForm.styled";
+import { But, Form, Input, Label } from "./ContactForm.styled";
 
 export class ContactForm extends Component{
 
@@ -56,7 +56,7 @@ export class ContactForm extends Component{
                     required
                     onChange={this.handleChange}
                     value={this.state.number } />
-                <button type="submit"> Add contact</button>
+                <But type="submit"> Add contact</But>
                 </Form>
         )
     }
