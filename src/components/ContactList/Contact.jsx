@@ -1,8 +1,12 @@
-import { But } from "components/ContactForm/ContactForm.styled";
+import { ButtonDel, ListItem } from './ContactList.styled';
 
-export const Contact = ({name, number, onClick}) => (
-    <li><p>
-        {name}:{number}
+export const Contact = ({ name, number, onClick }) => (
+  <ListItem>
+    <p>
+      {name}: {number}
     </p>
-        <But type="button" onClick={ onClick}>Delete</But>
-    </li>)
+    <ButtonDel type="button" onClick={onClick}>
+      Delete
+    </ButtonDel>
+  </ListItem>
+);
